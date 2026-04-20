@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "author": "You",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 300, "left": 100, "attrs": {} },
+    { 
+      "type": "wokwi-neopixel-matrix", "id": "matrix1", "top": 48.2, "left": 412.8,
+      "attrs": { "cols": "8", "rows": "8" } 
+    },
+    { 
+      "type": "wokwi-lcd1602", "id": "lcd1", "top": 50, "left": -200, 
+      "attrs": { "pins": "i2c" } 
+    },
+    { "type": "wokwi-ky-040", "id": "encoder", "top": 450, "left": 450, "attrs": {} }
+  ],
+  "connections": [
+    [ "matrix1:VCC", "uno:5V", "red", [] ],
+    [ "matrix1:GND", "uno:GND.1", "black", [] ],
+    [ "matrix1:DIN", "uno:6", "green", [] ],
+
+    [ "lcd1:GND", "uno:GND.2", "black", [] ],
+    [ "lcd1:VCC", "uno:5V", "red", [] ],
+    [ "lcd1:SDA", "uno:A4", "blue", [] ],
+    [ "lcd1:SCL", "uno:A5", "yellow", [] ],
+
+    [ "encoder:GND", "uno:GND.3", "black", [] ],
+    [ "encoder:VCC", "uno:5V", "red", [] ],
+    [ "encoder:CLK", "uno:2", "orange", [] ],
+    [ "encoder:DT", "uno:3", "purple", [] ],
+    [ "encoder:SW", "uno:4", "gray", [] ]
+  ]
+}
