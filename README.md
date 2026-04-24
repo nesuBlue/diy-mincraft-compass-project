@@ -24,7 +24,8 @@ At the moment the project simulates direction using a rotary encoder — turning
 ---
 
 ## How it works
-<img width="1032" height="751" alt="image" src="https://github.com/user-attachments/assets/73e6c245-2d8c-4bfa-9839-8782240fe6e8" />
+<img width="640" height="360" alt="Mincraft-Compass-afront" src="https://github.com/user-attachments/assets/35839b2d-a430-4e6f-be84-0351847034e3" />
+
 
 - **8×8 NeoPixel matrix** displays the compass needle as a pixel art sprite, with 24 hand-drawn frames covering a full 360° rotation (15° per frame)
 - **I2C LCD (16×2)** shows the current direction name and degree value
